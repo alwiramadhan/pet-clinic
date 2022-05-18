@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,600&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+.mt-6 {
+  margin-top: 10rem;
+}
+
+.pt-lapan-persen {
+  padding-top: 8%;
+}
+
+.px-6 {
+  padding-left: 14rem;
+  padding-right: 10rem;
+}
+
+.py-6 {
+  padding-top: 12rem;
+  padding-bottom: 10rem;
+}
+
+.home {
+  padding-top: 9%;
+  z-index: 9999;
+  height: 100vh;
+}
+
+/* Navbar */
+
+.navbar li {
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+.navbar a {
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent 90%,
+    #f6b314 90%,
+    #f6b314 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+
+  transition: background-size 300ms;
+}
+
+.navbar a:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+
+.home-img {
+  width: 16rem;
+  border-radius: 12px;
+  box-shadow: 20px 20px 7px rgb(224, 224, 224);
+  -webkit-box-shadow: 20px 20px 7px rgb(224, 224, 224);
+  -moz-box-shadow: 20px 20px 7px rgb(224, 224, 224);
+}
+
+.navbar {
+  background: white;
+}
+
+.learnMoreBtn {
+  position: relative;
+  margin: auto;
+  padding: 8px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+}
+
+.learnMoreBtn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #f6b314;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.learnMoreBtn span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #263238;
+}
+
+.learnMoreBtn svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #263238;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.learnMoreBtn:hover:before {
+  width: 100%;
+  background: #f6b314;
+}
+
+.learnMoreBtn:hover svg {
+  transform: translateX(0);
+}
+
+.learnMoreBtn:active {
+  transform: scale(0.95);
+}
+
+#about-us {
+  padding: 2% 0;
+}
+
+#about-us p {
+  color: #33434b;
+  padding-top: 10px;
+}
+
+.appointment {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("img/bg-form.jpg");
+  background-size: cover;
+  color: white;
+}
+
+/* Testimonial */
+.card {
+  border: none;
+}
+
+.user-content p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.ratings i {
+  color: #f6b214;
+}
+
+/* CSS untuk footer */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.form-footer {
+  background: #212529;
+  border-color: #545454;
+}
+
+.form-footer:focus {
+  background: #212529;
+}
+
+footer {
+  background: #212529;
+}
+
+.form-contact {
+  width: 400px;
+  height: 460px;
+  border-radius: 15px;
+  background-color: #ffffff1a;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+form {
+  padding-top: 6%;
+}
+
+.form-contact input {
+  width: 280px;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+/* Submit Button Contact form */
+.btn-sumbit-form {
+  width: 140px;
+  height: auto;
+  float: left;
+  transition: 0.5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.btn-sumbit-form:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.btn-sumbit-form:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.btn-sumbit-form:hover {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+.btn-sumbit-form:hover:before {
+  border-color: #ffffff;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+}
+
+.btn-sumbit-form:hover:after {
+  border-color: #ffffff;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.5s;
+}
+
+.button-submit-form {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+@media (max-width: 575.98px) {
+  .home img {
+    width: 200px;
+  }
+
+  #about-us {
+    margin-top: 60px;
+  }
+
+  #testimonial {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home img {
+    width: 200px;
+  }
+
+  #about-us {
+    margin-top: 60px;
+  }
+
+  #testimonial {
+    margin-top: 300px;
+  }
+}
+
+/* pet-grooms CSS */
+/* hero */
+.pet-grooms-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("img/dog-grooms1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.pet-grooms-hero-caption {
+  padding-top: 38%;
+  color: #fff;
+}
+
+.pet-grooms-explanation {
+  padding: 8% 0;
+}
+
+.pet-groom-benefit-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("img/dog-grooms.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 560px;
+  background-attachment: fixed;
+}
+
+.pet-groom-benefit-img1 {
+  background-image: url("img/cat-groom.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.pet-groom-benefit-img2 {
+  background-image: url("img/dog-grooms2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.form-pet-grooms {
+  background-color: #000000;
+  padding: 7% 1% 0 7%;
+  background: url("img/pet-book.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.form-form input {
+  width: 280px;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.form-form {
+  width: 400px;
+  height: 460px;
+  border-radius: 15px;
+  background-color: #0000004f;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* PET HOTEL CSS */
+.pet-hotel-hero {
+  background-image: url("img/pet-hotel-bg.jpg");
+  background-size: cover;
+  height: 110vh;
+  background-position-x: center;
+}
+
+/* View Button */
+.view-btn {
+  background-color: #212529;
+  border: 1px solid #212529;
+  color: #fff;
+  padding: 4px 26px;
+  border-radius: 4px;
+}
+
+.view-btn:hover {
+  background-color: #fff;
+  border: 1px solid #212529;
+  color: #212529;
+}
+
+.pet-hotel-img {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.32),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("img/pet-hoteljpg.jpg");
+  background-size: cover;
+  height: 60vh;
+  background-position-y: center;
+}
+
+.pet-hotel-img1 {
+  background: url("img/pet-hotel.jpg");
+  height: 60vh;
+  background-size: cover;
+}
+
+.vac-hero-img {
+  height: 40vh;
+  background: url("img/vac-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 5% 8.8%;
+  border-radius: 20px;
+}
+
+.form-vaccination {
+  background-color: #000000;
+  padding: 7% 1% 0 7%;
+  background: url("img/vac-form-img.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Our Team CSS */
+.our-doctors {
+  padding-top: 80px;
+}
+
+.card-doctor {
+  background-color: #212529cc;
+  color: white;
+}

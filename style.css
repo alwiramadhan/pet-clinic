@@ -26,7 +26,7 @@ body {
 .home {
   padding-top: 9%;
   z-index: 9999;
-  height: 100vh;
+  height: 90vh;
 }
 
 /* Navbar */
@@ -130,6 +130,7 @@ body {
 
 #about-us {
   padding: 2% 0;
+  height: 90vh;
 }
 
 #about-us p {
@@ -300,135 +301,3 @@ form {
   }
 }
 
-/* pet-grooms CSS */
-/* hero */
-.pet-grooms-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("img/dog-grooms1.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-}
-
-.pet-grooms-hero-caption {
-  padding-top: 38%;
-  color: #fff;
-}
-
-.pet-grooms-explanation {
-  padding: 8% 0;
-}
-
-.pet-groom-benefit-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("img/dog-grooms.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 560px;
-  background-attachment: fixed;
-}
-
-.pet-groom-benefit-img1 {
-  background-image: url("img/cat-groom.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-}
-
-.pet-groom-benefit-img2 {
-  background-image: url("img/dog-grooms2.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-}
-
-.form-pet-grooms {
-  background-color: #000000;
-  padding: 7% 1% 0 7%;
-  background: url("img/pet-book.jpg");
-  background-size: cover;
-  height: 100vh;
-}
-
-.form-form input {
-  width: 280px;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 10px;
-}
-
-.form-form {
-  width: 400px;
-  height: 460px;
-  border-radius: 15px;
-  background-color: #0000004f;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-/* PET HOTEL CSS */
-.pet-hotel-hero {
-  background-image: url("img/pet-hotel-bg.jpg");
-  background-size: cover;
-  height: 110vh;
-  background-position-x: center;
-}
-
-/* View Button */
-.view-btn {
-  background-color: #212529;
-  border: 1px solid #212529;
-  color: #fff;
-  padding: 4px 26px;
-  border-radius: 4px;
-}
-
-.view-btn:hover {
-  background-color: #fff;
-  border: 1px solid #212529;
-  color: #212529;
-}
-
-.pet-hotel-img {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.32),
-      rgba(255, 255, 255, 0.1)
-    ),
-    url("img/pet-hoteljpg.jpg");
-  background-size: cover;
-  height: 60vh;
-  background-position-y: center;
-}
-
-.pet-hotel-img1 {
-  background: url("img/pet-hotel.jpg");
-  height: 60vh;
-  background-size: cover;
-}
-
-.vac-hero-img {
-  height: 40vh;
-  background: url("img/vac-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  margin: 5% 8.8%;
-  border-radius: 20px;
-}
-
-.form-vaccination {
-  background-color: #000000;
-  padding: 7% 1% 0 7%;
-  background: url("img/vac-form-img.jpg");
-  background-size: cover;
-  height: 100vh;
-}
-
-/* Our Team CSS */
-.our-doctors {
-  padding-top: 80px;
-}
-
-.card-doctor {
-  background-color: #212529cc;
-  color: white;
-}
